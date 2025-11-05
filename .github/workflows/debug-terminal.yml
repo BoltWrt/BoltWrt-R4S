@@ -45,7 +45,7 @@ jobs:
           # 调整 rust 组件的 ci-llvm 下载选项、
           sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
 
-          # mv config.txt .config
+          mv config.txt .config
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
